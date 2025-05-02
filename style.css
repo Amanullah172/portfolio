@@ -1,0 +1,481 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Outfit', sans-serif;
+    background: linear-gradient(#ffdad5, #fff7f9);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+                rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+                rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+                rgba(0, 0, 0, 0.06) 0px 2px 1px,
+                rgba(0, 0, 0, 0.09) 0px 4px 2px,
+                rgba(0, 0, 0, 0.09) 0px 8px 4px,
+                rgba(0, 0, 0, 0.09) 0px 16px 8px,
+                rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+
+  #header {
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .logo-header a {
+    font-family: "Oooh Baby", cursive;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+  }
+
+  .logo-header a:hover {
+    background-color: rgb(243, 190, 92);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+  }
+
+  .navbar ul {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .navbar ul li a {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: black;
+  }
+
+  .navbar ul li a:hover {
+    background-color: rgb(243, 190, 92);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+  }
+
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    #header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1.5rem;
+    }
+
+    .hamburger {
+      display: block;
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+    }
+
+    .navbar {
+      display: none;
+      width: 100%;
+    }
+
+    .navbar ul {
+      flex-direction: column;
+      gap: 1.2rem;
+      padding-top: 1rem;
+      width: 100%;
+    }
+
+    .navbar.show {
+      display: block;
+    }
+  }
+/* hero */
+#intro-self{
+    display: flex;
+    gap: 4rem;
+    padding-left: 9rem;
+}
+#left-intro{
+    width: 60%;
+    padding-top: 2.2rem;
+}
+.lefts-intro h1 {
+ font-size: 2.4rem;
+}
+.intro-design{
+color: blue;
+}
+.lefts-intro{
+    margin: 0rem 0rem 3.5rem 0rem;
+}
+.lefts-intro a{
+    font-size: 1.5rem;
+    border: 1px solid blue;
+    padding: .4rem;
+    background-color: blue;
+    color: white;
+}
+.lefts-intro a:hover{
+  color: blue;
+   background-color: white;
+}
+#icons{
+  font-size: 2rem;
+}
+#right-intro img{
+ width: 50%;
+ height: 60%;
+ border-radius: 50%;
+}
+@media (max-width: 1024px) {
+    #intro-self {
+      flex-wrap: wrap;
+      padding-left: 4rem;
+      justify-content: center;
+    }
+  
+    #left-intro {
+      width: 100%;
+      padding-top: 1rem;
+      text-align: center;
+    }
+  
+    .lefts-intro h1 {
+      font-size: 2rem;
+    }
+  
+    .lefts-intro a {
+      font-size: 1.2rem;
+      padding: 0.3rem 0.8rem;
+    }
+  
+    #right-intro {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+  
+    #right-intro img {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .left-icon {
+      margin-top: 1rem;
+    }
+  
+    .left-icon a {
+      margin: 0 0.5rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #intro-self {
+      padding-left: 2rem;
+      gap: 2rem;
+    }
+  
+    .lefts-intro h1 {
+      font-size: 1.6rem;
+    }
+  
+    .lefts-intro a {
+      font-size: 1rem;
+      padding: 0.3rem 0.7rem;
+    }
+  
+    #right-intro img {
+      width: 160px;
+      height: 160px;
+    }
+  
+    #icons {
+      font-size: 1.5rem;
+    }
+  }
+  
+/* about hero */
+#about h1{
+text-align: center;
+color: blue;
+font-size: 2.5rem;
+}
+#hero-about{
+    padding: 3% 15% 0% 22%;
+    display: flex;
+    gap: 5rem;
+}
+
+.left-about img{
+    width: 16rem;
+    height: 80%;
+}
+.right-about{
+    padding-top: 1.8rem;
+}
+.right-about h2{
+    font-family: "Oooh Baby", cursive;
+    font-weight: 900;
+    font-style: normal;
+}
+.right-about p{
+    font-family: "Playwrite AU VIC Guides", cursive;
+    font-weight: 400;
+    font-style: normal
+}
+@media (max-width: 1024px) {
+    #hero-about {
+      padding: 3% 10% 0 10%;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
+  
+    .left-about img {
+      width: 12rem;
+      height: auto;
+    }
+  
+    .right-about {
+      padding-top: 1rem;
+      text-align: center;
+    }
+  
+    .right-about h2 {
+      font-size: 2rem;
+    }
+  
+    .right-about p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #hero-about {
+      padding: 3% 5% 0 5%;
+    }
+  
+    .left-about img {
+      width: 10rem;
+      height: auto;
+    }
+  
+    .right-about h2 {
+      font-size: 1.6rem;
+    }
+  
+    .right-about p {
+      font-size: 1rem;
+    }
+  }
+  /*skills  */
+#skill{
+    padding: 0rem 3rem 0rem 3rem;
+display: grid;
+ grid-template-columns: repeat(3,1fr);
+ gap: 1rem;
+}
+.skilled-heading{
+    text-align: center;
+    color: blue;
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+#skills{
+    width: 80%;
+    padding: 2rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#skills-icon{
+    font-size: 3rem;
+    color: blue;
+    text-align: center;
+    padding-left: 3.5rem;
+}
+@media (max-width: 1024px) {
+    #skill {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 2rem;
+    }
+  
+    .skilled-heading {
+      font-size: 2rem;
+    }
+  
+    #skills {
+      width: 90%;
+      padding: 1.5rem;
+    }
+  
+    #skills-icon {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #skill {
+      grid-template-columns: 1fr;
+      padding: 0 1rem;
+    }
+  
+    .skilled-heading {
+      font-size: 1.8rem;
+    }
+  
+    #skills {
+      width: 100%;
+      padding: 1rem;
+    }
+  
+    #skills-icon {
+      font-size: 2rem;
+      padding-left: 1rem;
+    }
+  }
+  
+/* project */
+#project{
+    padding: 0rem 3rem 0rem 3rem;
+    display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap: 1rem;
+}
+.project-heading{
+    text-align: center;
+    color: blue;
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+}
+#projects{
+    border-radius: 10%;
+    width: 80%;
+    padding: 2rem;
+    /* background-color: rgb(205, 143, 29); */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+#projects-icon{
+    font-size: 3rem;
+    color: blue;
+    text-align: center;
+    padding-left: 5rem;
+    padding-bottom: 1rem;
+}
+@media (max-width: 1024px) {
+    #project {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 2rem;
+    }
+  
+    .project-heading {
+      font-size: 2rem;
+    }
+  
+    #projects {
+      width: 90%;
+      padding: 1.5rem;
+    }
+  
+    #projects-icon {
+      font-size: 2.5rem;
+      padding-left: 3rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #project {
+      grid-template-columns: 1fr;
+      padding: 0 1rem;
+    }
+  
+    .project-heading {
+      font-size: 1.8rem;
+    }
+  
+    #projects {
+      width: 100%;
+      padding: 1rem;
+    }
+  
+    #projects-icon {
+      font-size: 2rem;
+      padding-left: 2rem;
+    }
+  }
+  
+/* contact */
+#contact{
+    margin-top: 2rem;
+    background-color: rgb(55, 49, 49);
+    color: white;
+    padding: 2rem;
+}
+#contact-icon{
+    font-size: 2.5rem;
+    background-color: orange;
+    border-radius: 50%;
+    margin: 0 0 1% 50%;
+}
+#contact h1,p{
+    text-align: center;
+}
+#social-media{
+    padding:  2% 0 0 40%;
+}
+#contacts-icons{
+    font-size: 2.5rem;
+    background-color: rgb(236, 198, 129);
+    border-radius: 30%;
+}
+@media (max-width: 1024px) {
+    #contact {
+      padding: 1.5rem;
+    }
+  
+    #contact-icon {
+      font-size: 2rem;
+      margin: 0 0 1% 50%;
+    }
+  
+    #social-media {
+      padding: 2% 0 0 35%;
+    }
+  
+    #contacts-icons {
+      font-size: 2.2rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #contact {
+      padding: 1rem;
+      text-align: center;
+    }
+  
+    #contact-icon {
+      font-size: 1.8rem;
+      margin: 0 0 1% 0;
+    }
+  
+    #social-media {
+      padding: 2% 0;
+    }
+  
+    #contacts-icons {
+      font-size: 2rem;
+    }
+  }
+  

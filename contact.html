@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="contact.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Jacquard+24&family=Oooh+Baby&family=Pacifico&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+AU+VIC+Guides&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="logo-header">
+          <a href="./index.html">Amanullah</a>
+        </div>
+    
+        <button class="hamburger" id="hamburger">☰</button>
+    
+        <div class="navbar" id="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skill.html">Skills</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+          </ul>
+        </div>
+      </header>
+      <!-- contact -->
+    <div id="contact-container">
+      <form  action="https://api.web3forms.com/submit" method="POST" id="contact-container-left">
+            <div class="contact-title">
+            <h2>Get in touch</h2> <hr>
+            </div>
+            <input type="hidden" name="access_key" value="0f27f3fa-cb25-40e7-86e1-9777c2870f0b">
+                <input type="text" name="name" placeholder="Your Name"  class="input-contact" required>
+                <input type="email" name="email" placeholder="Your Email"  class="input-contact" required>
+                <textarea placeholder="message" name="message" class="input-contact" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+        </div>
+        <div class="left-contact-container">
+            <img src="" alt="">
+        </div>
+    </div>
+    </div>
+    <!-- contact -->
+ <div id="contact">
+    <a href=""><i id="contact-icon" class='bx bxl-gmail' ></i></a>
+    <h1>Let's Talk With Me</h1>
+    <p>Web development expert here! Need help with your website? Let's chat</p>
+    <div id="social-media">
+    <a href=""><i id="contacts-icons" class='bx bxl-twitter' ></i></a>
+    <a href=""><i id="contacts-icons" class='bx bxl-linkedin' ></i></a>
+    <a href=""><i  id="contacts-icons" class='bx bxl-github' ></i></a>
+    <a href=""><i id="contacts-icons" class='bx bxl-facebook-circle' ></i></a>
+    </div>
+</div>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
+
+    hamburger.addEventListener('click', () => {
+      navbar.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
